@@ -99,19 +99,27 @@ a:link, a:visited {
   color: white;
   text-decoration: none;
 }
-img {
+
+/* img {
   display: flex;
   width:200px;
   border-radius: 50%;
   float: left;
   shape-outside: circle;
   margin-right: 40px;
-}
+} */
+
 article {
   position: relative;
   grid-area: article_area;
   display: block;
-} 
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+}
 
 p, li, label {
   font-family: 'Montserrat', sans-serif;

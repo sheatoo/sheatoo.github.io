@@ -1,11 +1,11 @@
-*{
+  *{
   box-sizing: border-box;
 }
 html{
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Libre Baskerville';
+  font-family: 'Lucida Sans';
 }
 
 .wrapper {
@@ -25,7 +25,7 @@ header {
   position: relative;
   display: flex;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1522050212171-61b01dd24579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+  background-image: url(https://images.unsplash.com/photo-1558158539-226f4a45f7b3?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
@@ -53,7 +53,7 @@ header {
   to {top: 40px;}
 }
 .side-nav{
-  list-style-type: none;
+/*   list-style-type: none; */
   position: fixed;
   display: block;
   right: 50px;
@@ -62,15 +62,16 @@ header {
   border: none;
 }
 
-.fa-star {
-  color: white;
+nav a {
+    display: block;
+    margin-bottom: 12px;
+    width: 2vw;
+    height: 2.5vh;
+/*     overflow: hidden; */
 }
 
-nav a {
-    margin-bottom: 10px;
-    width: 2vw;
-    height: 2.4vh;
-    /* overflow: hidden; */
+.fa-star {
+  color: white;
 }
 
 .head-button {
@@ -93,13 +94,13 @@ button {
 /* website: http://www.pascalvangemert.nl/ rgba(255,255,255,0)*/
 button a:hover {
 /*   background-color: #fafafa; */
-  color: black;
+/*   color: silver; */
+  text-shadow: 2px 2px 4px #000000;
 }
 a:link, a:visited {
   color: white;
   text-decoration: none;
 }
-
 /* img {
   display: flex;
   width:200px;
@@ -109,17 +110,18 @@ a:link, a:visited {
   margin-right: 40px;
 } */
 
+.intro {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto; 
+}
+
+
 article {
   position: relative;
   grid-area: article_area;
   display: block;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: auto;
-}
+} 
 
 p, li, label {
   font-family: 'Montserrat', sans-serif;
@@ -127,8 +129,16 @@ p, li, label {
 .bg {
   height: 100vh;
 }
+.section {
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  padding: 1em;
+  scroll-snap-type: y proximity;
+} 
+
 .b1 {
-  background: #cee0e3;
+  background: #000000;
 }
 
 .b2 {
@@ -138,12 +148,7 @@ p, li, label {
 .b3 {
   background: #4f94b0;
 }
-.section {
-  width: 100vw;
-  align-content: center;
-  padding: 1em;
-  scroll-snap-type: y proximity;
-} 
+
 
 .b4 {
   background: #86a6b4;

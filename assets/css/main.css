@@ -64,9 +64,9 @@ header {
 
 nav a {
     display: block;
-    margin-bottom: 12px;
-    width: 2vw;
-    height: 2.5vh;
+    margin-bottom: 30%px;
+    width: 3vw;
+    height: 3.5vh;
 /*     overflow: hidden; */
 }
 
@@ -96,7 +96,6 @@ button:hover {
   font-weight: bold;
 }
 
-
 a:link, a:visited {
   color: white;
   text-decoration: none;
@@ -110,6 +109,12 @@ a:link, a:visited {
   margin-right: 40px;
 } */
 
+article {
+  position: relative;
+  grid-area: article_area;
+  display: block;
+} 
+
 .intro {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
@@ -119,12 +124,9 @@ a:link, a:visited {
   color:white;
 }
 
-
-article {
-  position: relative;
-  grid-area: article_area;
-  display: block;
-} 
+.content {
+  width: 40vw;
+}
 
 p, li, label {
   font-family: 'Montserrat', sans-serif;
@@ -157,6 +159,7 @@ p, li, label {
   background: #86a6b4;
   height: 100vh;
 }
+
 .calendar {
 /*   border-radius: 3%; */
   float: left;
@@ -166,6 +169,7 @@ p, li, label {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 /*  use @media-queries to change size  */
 }
+
 ul {
   list-style-type:none;
   height: auto;
@@ -224,7 +228,6 @@ ul {
   background-color: #86a6b4;
   border: 0;
   border-radius: 50%;
-  
 }
 
 .days li:first-child {
@@ -267,4 +270,9 @@ footer {
   color: white;
   background-color: #04202c;
   text-align: center;
+}
+
+footer a {
+  width: 20px;
+  padding: 1%;
 }
